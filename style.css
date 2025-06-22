@@ -24,11 +24,12 @@ html, body {
     height:100%;
   }
   
-body {
+body 
+{
       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-  }
+      background-size: 1000% 1000%;
+      animation: gradient 12s ease infinite;
+}
   
   @keyframes gradient {
       0% {
@@ -336,6 +337,7 @@ section
 #about
 {
     position: relative;
+    margin-top: 30rem;
 }
 
 .about-containers
@@ -343,6 +345,7 @@ section
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    margin-left: -2rem;
 }
 
 .about-details-container
@@ -359,6 +362,8 @@ section
 .about-pic
 {
     border-radius: 2rem;
+    width: 350px;
+    height: 350px;
 }
 
 .arrow
@@ -382,7 +387,6 @@ section
 .section-container
 {
     gap: 4rem;
-    height: 80%;
 }
 
 .section__pic-container
@@ -510,6 +514,46 @@ article .icon
 {
     cursor: default;
     height: 2rem;
+}
+
+.phone-numbers
+{
+    color: black;
+}
+
+.bordered-image
+{
+    border: 5px solid; 
+}
+
+.text-container p
+{
+    color: black;
+    font-size: 1.2rem;
+    margin-left: -2rem;
+}
+
+.project3-img
+{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 2.5rem;
+}
+
+.project1-img
+{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 1rem;
+}
+
+.project-text
+{
+    color: black;
+    margin-bottom: 2rem;
+
 }
 
 /* FOOTER */
