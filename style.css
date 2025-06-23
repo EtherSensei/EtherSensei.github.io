@@ -27,7 +27,7 @@ html, body {
 body 
 {
       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 1000% 1000%;
+      background-size: 1500% 1500%;
       animation: gradient 12s ease infinite;
 }
   
@@ -337,7 +337,8 @@ section
 #about
 {
     position: relative;
-    margin-top: 30rem;
+    margin-top: 25rem;
+    margin-bottom: 10rem;
 }
 
 .about-containers
@@ -376,7 +377,7 @@ section
 .details-container 
 {
     padding: 1.5rem;
-    flex: 1;
+    flex: .7;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -401,6 +402,51 @@ section
 #experience
 {
     position: relative;
+    padding-top: 10vh;
+    margin-bottom: 30rem;
+}
+
+.experience-row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.experience-details-left
+{
+    order: 1;
+}
+
+.experience-pic-right
+{
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-details-right
+{
+    order: 2;
+}
+
+.experience-pic-left
+{
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-pic-right .about-pic,
+.experience-pic-left .about-pic
+{
+    max-height: 60%;
+    width: auto;
+    object-fit: contain;
 }
 
 .experience-sub-title
@@ -408,7 +454,16 @@ section
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-sub-heading
+{
+    color: rgb(85, 85, 85);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .experience-details-container
@@ -423,22 +478,39 @@ section
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
 }
 
 article
 {
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    justify-content: flex-start;
     gap: 0.5rem;
+    text-align: left
 }
 
 article .icon
 {
     cursor: default;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+article div
+{
+    display: inline-block;
+}
+
+article h3
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 /* PROJECTS */
@@ -446,6 +518,27 @@ article .icon
 #projects
 {
     position: relative;
+    margin-bottom: 25rem;
+}
+
+#projects .about-containers
+{
+    justify-content: center;
+    margin-left: 0;
+}
+
+#projects .details-container
+{
+    flex: 0 1 350px;
+    padding: 0.8rem 1.5rem;
+}
+
+#projects .details-container .article-container
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
 }
 
 .color-container
