@@ -412,7 +412,7 @@ section
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 
 .experience-details-left
