@@ -18,21 +18,35 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch-checkbox">
+            <label for="theme-switch" class="theme-switch-label">
+                <span class="theme-switch-slider"></span>
+            </label>
+        </div>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Ethan Venner</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        <div class="nav-right">
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch-mobile" class="theme-switch-checkbox">
+                <label for="theme-switch-mobile" class="theme-switch-label">
+                    <span class="theme-switch-slider"></span>
+                </label>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
         </div>
     </nav>
     <section id="profile">
@@ -230,21 +244,8 @@
         </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <p>Copyright &#169; 2024 Ethan Venner. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
